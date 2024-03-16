@@ -17,5 +17,5 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: yillkid/ntc-flask-cd
+        tags: yillkid/devops-flask-cd
         # /app:latest
