@@ -17,3 +17,9 @@ $ cp mona.yml ../../.github/workflows
 ```bash=
 $ git add ../../.github/workflows/ ; git commit -m "example: Greeting-from-Mona" ; git push
 ```
+
+## GitHub Action 畫面
+![image](https://github.com/4-learn/devops-flask-demo-site/assets/185872/daade598-80c1-42e8-a7be-5af42e8a81c7)
+
+
+
