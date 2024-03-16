@@ -12,4 +12,4 @@ jobs:
       env: 
         HI: HELLO
       run: |
-        echo ${{HI}} ${{secrets.MY_VAR}} ${{secrets.FIRST_NAME}} ${{secrets.MIDDLE_NAME}} ${{secrets.LAST_NAME}}.
+        echo $HI ${{secrets.MY_VAR}} ${{secrets.FIRST_NAME}} ${{secrets.MIDDLE_NAME}} ${{secrets.LAST_NAME}}.
