@@ -9,6 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v3 
     - name: Print a greeting
-      env: HI: HELLO
+      env: 
+        HI: HELLO
       run: |
         echo $HI ${{secrets.MY_VAR}} ${{secrets.FIRST_NAME}} ${{secrets.MIDDLE_NAME}} ${{secrets.LAST_NAME}}.
