@@ -1,10 +1,12 @@
 - hosts: localhost
   tasks:
-    - name: Check connectivity to Google DNS
+    - name: Check connectivity to Google
       uri:
-        url: http://8.8.8.8
+        url: https://www.google.com
         method: GET
-      register: http_get
-    - name: Print result
+        return_content: yes
+      register: web_response
+
+    - name: Print web page content
       debug:
-        msg: "Status code: {{ http_get.status }}"
+        var: web_response.content
