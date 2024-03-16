@@ -10,6 +10,6 @@ jobs:
     - uses: actions/setup-python@v3 
     - name: Print a greeting
       env: 
-        HI: HELLO
+        HIHI: HELLO
       run: |
-        echo $HI ${{secrets.MY_VAR}} ${{secrets.FIRST_NAME}} ${{secrets.MIDDLE_NAME}} ${{secrets.LAST_NAME}}.
+        echo $HIHI ${{secrets.MY_VAR}} ${{secrets.FIRST_NAME}} ${{secrets.MIDDLE_NAME}} ${{secrets.LAST_NAME}}.
