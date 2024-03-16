@@ -17,10 +17,8 @@ webdriver_service = ChromeService(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
 
 try:
-    driver.get("https://www.timeanddate.com/")
-    # Assuming there's a stable element to fetch the date from
-    date_element = driver.find_element(By.CSS_SELECTOR, "some stable selector")
-    print("Today's date is:", date_element.text)
+    site = driver.get("https://www.timeanddate.com/")
+    print("title = :", site.text)
 finally:
     driver.quit()
 
