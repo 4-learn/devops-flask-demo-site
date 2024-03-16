@@ -1,4 +1,4 @@
-name: NTC devops for flask
+name: Devops for flask
 on: push
 
 jobs:
