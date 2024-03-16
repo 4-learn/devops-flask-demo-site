@@ -1,4 +1,3 @@
-flask
-requests
+Flask
 pytest
-Flask-Testing
+requests
