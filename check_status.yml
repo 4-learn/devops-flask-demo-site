@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+    - name: Check connectivity to Google DNS
+      uri:
+        url: http://8.8.8.8
+        method: GET
+      register: http_get
+    - name: Print result
+      debug:
+        msg: "Status code: {{ http_get.status }}"
