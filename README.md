@@ -1,7 +1,2 @@
-# Docker Image exmaple
-
-## Build 
-sudo docker build . -t docker-flask
-
-## Run
-sudo docker run -ti docker-flask 
+# devops-flask-demo-site
+The demo site for https://github.com/4-learn/devops
