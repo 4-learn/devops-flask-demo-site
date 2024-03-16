@@ -17,8 +17,8 @@ webdriver_service = ChromeService(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
 
 try:
-    site = driver.get("https://www.timeanddate.com/")
-    print("title = :", site.text)
+    driver.get("https://www.timeanddate.com/")
+    print("title = :", driver.title)
 finally:
     driver.quit()
 
