@@ -12,4 +12,4 @@ jobs:
       env: 
         HIHI: HELLO
       run: |
-        echo $HIHI ${{secrets.MY_VAR}} ${{secrets.FIRST_NAME}} ${{secrets.MIDDLE_NAME}} ${{secrets.LAST_NAME}}.
+        echo "HELLO " ${{secrets.MY_VAR}} ${{secrets.FIRST_NAME}} ${{secrets.MIDDLE_NAME}} ${{secrets.LAST_NAME}}.
