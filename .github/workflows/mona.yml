@@ -10,4 +10,4 @@ jobs:
     - uses: actions/setup-python@v3 
     - name: Print a greeting
       run: |
-        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+        echo ${{MY_VAR}} ${{FIRST_NAME}} ${{MIDDLE_NAME}} ${{LAST_NAME}}.
