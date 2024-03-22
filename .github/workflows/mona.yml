@@ -1,0 +1,15 @@
+name: Greeting from Mona
+on: push
+
+jobs:
+  my-job:
+    name: My Job
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v3 
+    - name: Print a greeting
+      env:
+         NICKNAME: 123
+      run: |
+        echo $NICKNAME ${{secrets.MY_VAR}} ${{secrets.FIRST_NAME}} ${{secrets.MIDDLE_NAME}} ${{secrets.LAST_NAME}}.
